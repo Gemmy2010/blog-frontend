@@ -7,6 +7,7 @@ import { CategoriesService } from '../../services/categories.service';
   styleUrls: ['./category-navbar.component.css'],
 })
 export class CategoryNavbarComponent implements OnInit {
+  logoPath: string = '../../../assets/logo.png';
   categoryArray: any[] = [];
 
   constructor(private categoryService: CategoriesService) {}

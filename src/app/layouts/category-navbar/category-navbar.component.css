@@ -1,15 +1,22 @@
 nav {
-  margin-top: 100px;
-  height: 50px;
+  /* margin-top: 100px; */
+  height: 150px;
   background-color: var(--navbar-footer-color);
+  overflow: hidden;
 }
 li {
   margin-right: 10px;
 }
 .nav-item a {
   text-decoration: none;
+  display: flex;
 }
 
 .nav-link {
   text-transform: uppercase;
+  display: flex;
+}
+.nav-link .site-logo img {
+  width: 350px;
+  height: 350px;
 }

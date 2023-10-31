@@ -1,7 +1,18 @@
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <div class="collapse navbar-collapse justify-content-center">
-      <ul class="navbar-nav nav-link" *ngFor="let category of categoryArray">
+    <div
+      class="collapse navbar-collapse justify-content-between overflow-hidden"
+    >
+      <div>
+        <a class="site-logo" routerLink="/">
+          <img [src]="logoPath" alt="blog logo" />
+        </a>
+      </div>
+
+      <ul
+        class="navbar-nav nav-link f-flex"
+        *ngFor="let category of categoryArray"
+      >
         <li class="nav-item ml-3">
           <a
             class="nav-link"
