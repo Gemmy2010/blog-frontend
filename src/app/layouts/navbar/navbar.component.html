@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <div
+      class="collapse navbar-collapse justify-content-between overflow-hidden"
+    >
+      <div>
+        <a class="site-logo" routerLink="/">
+          <img [src]="logoPath" alt="blog logo" />
+        </a>
+      </div>
+      <div class="nav-item">
+        <a class="navlink text-theme-primary" [routerLink]="['/']"> Home </a>
+      </div>
+      <div class="nav-item">
+        <a class="navlink text-theme-primary" [routerLink]="['/categories']">
+          Categories
+        </a>
+      </div>
+
+      <div class="nav-item">
+        <a class="navlink text-theme-primary" [routerLink]="['/about']">
+          About
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

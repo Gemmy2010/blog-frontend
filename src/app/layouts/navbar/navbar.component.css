@@ -1,24 +1,24 @@
-/* nav {
-  /* margin-top: 100px; 
-  margin-top: 150px;
+nav {
+  margin-top: 0px;
+  height: 150px;
   background-color: var(--navbar-footer-color);
   overflow: hidden;
 }
 li {
   margin-right: 10px;
 }
-.nav-item a {
-  text-decoration: none;
+.nav-item {
   display: flex;
   color: var(--primary-color);
   font-weight: 900;
 }
 
-.nav-link {
+.nav-item > a {
+  text-decoration: none;
   text-transform: uppercase;
   display: flex;
 }
 .nav-link .site-logo img {
   width: 350px;
   height: 350px;
-} */
+}

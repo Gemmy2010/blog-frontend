@@ -2,8 +2,8 @@
   <div class="card-body">
     <div class="text-center mt-3 mb-5">
       <h3>SUBSCRIPTION FORM</h3>
-      <p class="m-auto subs.text mt-5">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      <p class="m-auto subs-text mt-5">
+        Sign up to get the latest updates. stay in the loop!
       </p>
 
       <div class="alert alert-danger mt-3" *ngIf="isEmailError">
@@ -20,7 +20,7 @@
         (ngSubmit)="onSubmit(subForm.value)"
         *ngIf="!isSubscribed"
       >
-        <div class="form-group col-md-5">
+        <div class="form-group mr-2">
           <input
             type="text"
             class="form-control"
@@ -35,7 +35,7 @@
             <div *ngIf="Name.errors?.['required']">Name is required</div>
           </div>
         </div>
-        <div class="form-group col-md-5">
+        <div class="form-group mr-2">
           <input
             type="email"
             class="form-control"
@@ -54,14 +54,12 @@
             </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <button
-            class="btn btn-info btn-block btn-sub btn-theme"
-            [disabled]="subForm.invalid"
-          >
-            Subscribe
-          </button>
-        </div>
+        <button
+          class="btn btn-info btn-sub btn-theme"
+          [disabled]="subForm.invalid"
+        >
+          Subscribe
+        </button>
       </form>
     </div>
   </div>

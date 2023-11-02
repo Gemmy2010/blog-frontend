@@ -3,7 +3,7 @@
   *ngIf="postData"
   [routerLink]="['/post', postData.id]"
 >
-  <img src="{{ postData?.data?.postImgPath }}" />
+  <img src="{{ postData?.data?.postImgPath }}" class="custom-image" />
   <div class="card-body">
     <small class="bg-light text-danger text-center">{{
       postData?.data?.category.category
@@ -19,7 +19,7 @@
 
     <h5 class="mt-1">{{ postData?.data?.title }}</h5>
     <p>
-      {{ postData?.data?.excerpt }}
+      {{ postData?.data?.excerpt | excerpts }}
     </p>
     <small class="bg-light text-warning text-center custom-margin"
       >Last Update - {{ postData?.data?.createdAt.toMillis() | date }}</small

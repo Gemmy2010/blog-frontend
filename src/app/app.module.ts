@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { FormsModule } from '@angular/forms';
-
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layouts/header/header.component';
 import { CategoryNavbarComponent } from './layouts/category-navbar/category-navbar.component';
@@ -20,6 +20,9 @@ import { CommentFormComponent } from './comments/comment-form/comment-form.compo
 import { CommentListComponent } from './comments/comment-list/comment-list.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PostCardComponent } from './layouts/post-card/post-card.component';
+import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { ExcerptsPipe } from './pipes/excerpts.pipe';
 
 @NgModule({
   declarations: [
@@ -37,11 +40,15 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
     CommentListComponent,
     AboutUsComponent,
     PostCardComponent,
+    NavbarComponent,
+    AllCategoriesComponent,
+    ExcerptsPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFirestoreModule,
+    RouterModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     FormsModule,
   ],
