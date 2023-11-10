@@ -23,6 +23,7 @@ import { PostCardComponent } from './layouts/post-card/post-card.component';
 import { AllCategoriesComponent } from './pages/all-categories/all-categories.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
 import { ExcerptsPipe } from './pipes/excerpts.pipe';
+import { ReplyFormComponent } from './comments/reply-form/reply-form.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { ExcerptsPipe } from './pipes/excerpts.pipe';
     NavbarComponent,
     AllCategoriesComponent,
     ExcerptsPipe,
+    ReplyFormComponent,
   ],
   imports: [
     BrowserModule,

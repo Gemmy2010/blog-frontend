@@ -1,8 +1,9 @@
-/* nav {
-  /* margin-top: 100px; 
+nav {
+  margin-top: 100px;
   margin-top: 150px;
-  background-color: var(--navbar-footer-color);
+  background-color: var(--primary-color);
   overflow: hidden;
+  height: 300px;
 }
 li {
   margin-right: 10px;
@@ -10,7 +11,7 @@ li {
 .nav-item a {
   text-decoration: none;
   display: flex;
-  color: var(--primary-color);
+  color: #fff;
   font-weight: 900;
 }
 
@@ -18,7 +19,3 @@ li {
   text-transform: uppercase;
   display: flex;
 }
-.nav-link .site-logo img {
-  width: 350px;
-  height: 350px;
-} */

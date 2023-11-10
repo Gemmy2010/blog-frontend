@@ -1,20 +1,17 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
   <div class="container">
     <div
       class="collapse navbar-collapse justify-content-between overflow-hidden"
+    > -->
+<ul class="navbar-nav nav-link f-flex" *ngFor="let category of categoryArray">
+  <li class="nav-item ml-3">
+    <a
+      class="nav-link"
+      [routerLink]="['/category', category.data.category, category.id]"
+      >{{ category.data.category }}</a
     >
-      <ul
-        class="navbar-nav nav-link f-flex"
-        *ngFor="let category of categoryArray"
-      >
-        <li class="nav-item ml-3">
-          <a
-            class="nav-link"
-            [routerLink]="['/category', category.data.category, category.id]"
-            >{{ category.data.category }}</a
-          >
-        </li>
-      </ul>
-    </div>
+  </li>
+</ul>
+<!-- </div>
   </div>
-</nav>
+</nav> -->
